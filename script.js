@@ -3,12 +3,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const input = document.getElementById("opinion-input");
   const list = document.getElementById("opinion-list");
 
+  
   // Fetch and render existing opinions
   fetch("http://localhost:3000/opinions")
     .then((res) => res.json())
     .then((data) => {
       data.forEach(opinion => renderOpinion(opinion));
     });
+
 
   // Handle form submission
   form.addEventListener("submit", (e) => {
@@ -30,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 
+
   // Render an opinion in the list
   function renderOpinion(opinion) {
     const li = document.createElement("li");
@@ -38,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     list.appendChild(li);
   }
 });
+
 
 // Toggle form visibility
 function toggleOpinionForm() {
