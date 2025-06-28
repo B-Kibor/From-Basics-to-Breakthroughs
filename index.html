@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog</title>
+  <link rel="icon" type="image/png" href="https://media.istockphoto.com/id/2179594861/photo/programing-icon-element-on-white-background.jpg?s=612x612&w=0&k=20&c=x2BSpryO6RAapRaNoRrvvCuCPVTQ5swRjmd7_GGhfTc=" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
+
+  <!-- Header -->
+  <header class="bg-blue-700 text-white py-8 shadow-md">
+    <div class="max-w-5xl mx-auto px-4">
+      <h1 class="text-4xl font-bold">From Basics to Breakthroughs</h1>
+      <p class="text-lg mt-2">Exploring Web Development Trends and Best Practices</p>
+    </div>
+  </header>
+
+  <!-- Main Blog Content -->
+  <main class="max-w-4xl mx-auto px-4 py-10 bg-white mt-6 rounded-lg shadow-sm">
+    
+    <!-- Introduction -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-blue-600 mb-2">Introduction</h2>
+      <p>
+        Web development is changing faster than ever. From the rise of mobile-first design to utility-first CSS frameworks and JavaScript frameworks taking over the frontend, developers need to stay sharp and updated. As a student in Phase 1 of software engineering, I’ve started understanding the core tools that power modern websites—and this blog explores what’s trending, what’s innovative, and what are considered best practices today.
+      </p>
+    </section>
+
+    <!-- Key Industry Trend -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-blue-600 mb-2">Key Industry Trend: Mobile-First and Responsive Design</h2>
+      <p>
+        More than half of global web traffic comes from mobile devices. That’s why <strong>mobile-first design</strong> is now the standard. Developers use responsive frameworks like <strong>Tailwind CSS</strong> and <strong>Bootstrap</strong> to build interfaces that adapt to all screen sizes.
+      </p>
+      <pre class="bg-gray-100 text-sm p-4 mt-4 rounded-md overflow-x-auto">
+&lt;div class="p-4 sm:p-6 md:p-8 lg:p-10"&gt;Responsive Box&lt;/div&gt;
+      </pre>
+    </section>
+
+    <!-- Innovative Technology -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-blue-600 mb-2">Innovative Technology: Tailwind CSS & Bootstrap</h2>
+
+      <h3 class="text-lg font-semibold mt-4">Tailwind CSS</h3>
+      <p>
+        Tailwind is a <strong>utility-first framework</strong>. Instead of writing custom CSS, you apply small classes directly in HTML. It's fast and efficient.
+      </p>
+      <pre class="bg-gray-100 text-sm p-4 mt-2 rounded-md overflow-x-auto">
+&lt;button class="bg-blue-500 text-white py-2 px-4 rounded"&gt;Tailwind Button&lt;/button&gt;
+      </pre>
+
+      <h3 class="text-lg font-semibold mt-6">Bootstrap</h3>
+      <p>
+        Bootstrap is <strong>component-based</strong> and provides pre-designed elements like cards, navbars, and modals.
+      </p>
+      <pre class="bg-gray-100 text-sm p-4 mt-2 rounded-md overflow-x-auto">
+&lt;button class="btn btn-primary"&gt;Bootstrap Button&lt;/button&gt;
+      </pre>
+    </section>
+
+    <!-- Best Practices -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-blue-600 mb-2">Best Practice: Keeping Code Clean & Organized</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Use meaningful class names or utility classes</li>
+        <li>Keep HTML structured and semantic</li>
+        <li>Separate concerns: logic (JS), structure (HTML), and style (CSS/Tailwind/Bootstrap)</li>
+        <li>Use version control (e.g. Git) for tracking changes</li>
+      </ul>
+    </section>
+
+    <!-- What I’ve Learned -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-blue-600 mb-2">What I’ve Learned So Far</h2>
+      <p>
+        In Phase 1, I’ve gained hands-on experience with:
+      </p>
+      <ul class="list-disc pl-6 mt-2 space-y-1">
+        <li><strong>HTML</strong> for page structure</li>
+        <li><strong>CSS</strong> for custom styles</li>
+        <li><strong>Tailwind CSS</strong> for utility-first styling</li>
+        <li><strong>Bootstrap</strong> for reusable components</li>
+        <li><strong>JavaScript</strong> for interactivity</li>
+      </ul>
+    </section>
+
+    <!-- Sample Code -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-blue-600 mb-2">Sample Code Snippet</h2>
+      <p>This is a basic JavaScript function I used to toggle menu visibility:</p>
+      <pre class="bg-gray-100 text-sm p-4 mt-4 rounded-md overflow-x-auto">
+function toggleMenu() {
+  const menu = document.getElementById('mobile-menu');
+  menu.classList.toggle('hidden');
+}
+      </pre>
+    </section>
+
+    <!-- Conclusion -->
+   <!-- Conclusion Section -->
+<section class="mb-4">
+  <h2 class="text-2xl font-semibold text-blue-600 mb-2">Conclusion</h2>
+  <p>
+    As the web evolves, so must we as developers. Tools like Tailwind and Bootstrap make styling easier. JavaScript brings logic and interaction. And responsive design ensures our work looks good everywhere.
+  </p>
+  <p class="mt-2 italic">
+    By learning the foundations in Phase 1 and staying aware of industry trends, I’m building a strong base for a future in web development.
+  </p>
+
+  <!-- Toggle Button -->
+  <div class="mt-4">
+    <button
+      onclick="toggleOpinionForm()"
+      class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+    >
+      What do you think—Tailwind or Bootstrap? Let’s talk!
+    </button>
+  </div>
+
+  <!-- Opinion Form -->
+  <div id="opinion-section" class="mt-6 hidden">
+    <form id="opinion-form" class="flex flex-col sm:flex-row gap-2 mb-4">
+      <input
+        type="text"
+        id="opinion-input"
+        placeholder="Your opinion..."
+        required
+        class="flex-1 px-4 py-2 border rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-300"
+      />
+      <button
+        type="submit"
+        class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+      >
+        Submit
+      </button>
+    </form>
+
+    <ul id="opinion-list" class="list-disc pl-5 space-y-2">
+      <!-- User opinions will be shown here -->
+    </ul>
+  </div>
+</section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-600 text-sm py-6">
+    © 2025 Web Trends Blog. All rights reserved.
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
