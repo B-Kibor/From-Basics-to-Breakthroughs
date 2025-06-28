@@ -30,10 +30,13 @@ This is a responsive blog project built during **Phase 1** of Software Engineeri
  4.Open index.html in your browser
 
 ## Opinion Feature
+
 Users can submit their opinion on whether they prefer Tailwind or Bootstrap. Submitted responses are saved and displayed on the page in real time.
 
 ## Author
+
 Kibor Kisabit.
 
 ## License
+
 MIT License.
